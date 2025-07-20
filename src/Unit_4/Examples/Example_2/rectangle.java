@@ -5,19 +5,19 @@ public class rectangle {
     private double length;
     private double width;
     private double area;
-    private double perim;
-    public void readParam(){
+    private double perimeter;
+    public void readParameters(){
         System.out.println("Enter length: ");
         length = in.nextDouble();
         System.out.println("Enter width: ");
         width = in.nextDouble();
     }
     public void calculate(){
-        perim = (length + width) * 2;
+        perimeter = (length + width) * 2;
         area = length * width;
     }
     public void display(){
-        System.out.println("perimeter :" + perim);
-        System.out.println("area: " + area);
+        System.out.println("Perimeter :" + perimeter);
+        System.out.println("Area: " + area);
     }
 }
