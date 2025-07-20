@@ -1,12 +1,12 @@
 package Unit_4.Examples.Example_4;
 public class Time {
-    private int h , m ,s;
-    Time(int h, int m, int s){
-        this.h = h;
-        this.m = m;
-        this.s = s;
+    private int hours , minutes , seconds;
+    Time(int hours, int minutes, int seconds){
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
     }
     public void showTime(){
-        System.out.printf("%d:%d:%d\n", h, m , s);
+        System.out.printf("%d:%d:%d\n", hours, minutes, seconds);
     }
 }
