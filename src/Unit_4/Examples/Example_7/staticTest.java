@@ -2,7 +2,6 @@ package Unit_4.Examples.Example_7;
 import java.io.*;
 public class staticTest {
     private int x;
-
     private static int count;
     public staticTest(){
         x = 0;
@@ -10,8 +9,8 @@ public class staticTest {
     public staticTest(int a){
         x = a;
     }
-    void setX(int a){
-        x = a;
+    void setX(int number){
+        x = number;
     }
     public int getX(){
         return x;
@@ -22,8 +21,8 @@ public class staticTest {
     public static void incrementCount(){
         count++;
     }
-    public String toStr(){
-        return ("x " + x + " and count " + count);
+    @Override
+    public String toString(){
+        return ("x = " + x + " and count = " + count);
     }
-
 }
