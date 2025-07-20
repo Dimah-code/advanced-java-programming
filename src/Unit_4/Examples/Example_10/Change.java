@@ -1,10 +1,9 @@
 package Unit_4.Examples.Example_10;
 public class Change {
-    private int x;
-    private int y;
-    public void setXY(int a, int b){
-        x = a;
-        y = b;
+    private int x, y;
+    public void setXY(int x, int y){
+        this.x = x;
+        this.y = y;
     }
     public void show(){
         System.out.println("x = " + x + " y = " + y);
