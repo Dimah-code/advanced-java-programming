@@ -1,19 +1,19 @@
 package Unit_4.Examples.Example_5;
-import java.util.*;
+
 public class Date {
-    private int y, m , d;
+    private int year, month, day;
     Date(){
         setDate(2012, 2, 5);
     }
-    Date(int y , int m , int d){
-        setDate(y, m , d);
+    Date(int year , int month , int day){
+        setDate(year, month, day);
     }
-    public void setDate(int y , int m , int d){
-        this.y = y;
-        this.m = m;
-        this.d = d;
+    public void setDate(int year, int month, int day){
+        this.year = year;
+        this.month = month;
+        this.day = day;
     }
     public void showDate(){
-        System.out.printf("%d/%d/%d\n", m,d,y);
+        System.out.printf("%d/%d/%d\n", month, day, year);
     }
 }
