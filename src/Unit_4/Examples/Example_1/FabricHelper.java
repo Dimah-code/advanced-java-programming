@@ -12,6 +12,6 @@ public class FabricHelper {
     }
     public void display(){
         System.out.println("Fabric in meters " + sqMeters);
-        System.out.println("Fabric in Yards " + toYards());
+        System.out.println("Fabric in yards " + toYards());
     }
 }
