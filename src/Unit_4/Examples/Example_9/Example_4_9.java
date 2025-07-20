@@ -1,17 +1,17 @@
 package Unit_4.Examples.Example_9;
 public class Example_4_9 {
     public static void main(String[] args) {
-        Change c = new Change();
+        Change change = new Change();
         int a = 100;
         int b = 200;
-        c.setXY(a , b);
-        System.out.println("Before change: ");
-        c.show();
-        changeMethod(c);
+        change.setXY(a , b);
+        System.out.println("Before switch: ");
+        change.show();
+        changeMethod(change);
         System.out.println("After switch: ");
-        c.show();
+        change.show();
     }
-    public static void changeMethod(Change c){
-        c.switchNumbers();
+    public static void changeMethod(Change change){
+        change.switchNumbers();
     }
 }
