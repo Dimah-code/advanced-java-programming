@@ -4,9 +4,9 @@ public class employee {
     private int no;
     private int salary;
     private empDate entryDate = new empDate();
-    public employee(int num , int sal){
-        no = num;
-        salary = sal;
+    public employee(int no , int salary){
+        this.no = no;
+        this.salary = salary;
     }
     public void display(){
         System.out.println("NO: " + no + " , Salary: " + salary);
