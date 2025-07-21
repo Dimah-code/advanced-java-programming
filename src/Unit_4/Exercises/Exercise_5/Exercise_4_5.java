@@ -2,12 +2,13 @@ package Unit_4.Exercises.Exercise_5;
 
 public class Exercise_4_5 {
     public static void main(String[] args) {
-        student stu = new student();
+        Student student = new Student();
+        System.out.println("Enter 10 courses score: ");
         for(int i = 0; i < 10; i++){
-            stu.readScore();
-            stu.getSum();
+            student.readScore(i);
+            student.getSum();
         }
-        stu.getAvg();
-        stu.display();
+        student.getAvg();
+        student.display();
     }
 }
