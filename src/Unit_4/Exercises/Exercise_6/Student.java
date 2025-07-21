@@ -67,7 +67,7 @@ public class Student {
         System.out.println("----- Student Info -----");
         System.out.println("Name: " + firstName + " " + lastName);
         System.out.println("ID: " + studentId);
-        System.out.println("Major: " + major);        System.out.println("Semester: " + currentSemester);
+        System.out.println("Major: " + major);
         System.out.println("GPA: " + gpa);
         System.out.println("Email: " + email);
         System.out.println("Courses: ");
