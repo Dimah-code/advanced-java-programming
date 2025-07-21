@@ -10,8 +10,8 @@ public class Exercise_4_7 {
         name = in.nextLine();
         System.out.println("Enter employee's salary: ");
         salary = in.nextInt();
-        Employee emp = new Employee(name, salary);
-        emp.calculate();
-        emp.display();
+        Employee employee = new Employee(name, salary);
+        employee.calculate();
+        employee.display();
     }
 }
