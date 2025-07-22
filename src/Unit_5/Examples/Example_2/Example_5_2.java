@@ -12,13 +12,13 @@ public class Example_5_2 {
         int compNum = word.compareTo(word1);
         System.out.println(compNum);
         if(word.compareTo(word1) == 0){
-            System.out.println("word == word1");
+            System.out.println("first word == second word");
         }
         if(word.compareTo(word1) < 0){
-            System.out.println("word < word1");
+            System.out.println("first word < second word");
         }
         if(word.compareTo(word1) > 0){
-            System.out.println("word > word1");
+            System.out.println("first word > second word");
         }
     }
 }
