@@ -2,7 +2,7 @@ package Unit_5.Examples.Example_3;
 import  java.util.*;
 public class Example_5_3 {
     public static void main(String[] args) {
-        String str = "Mouse loves cheese She loves susage", subStr = "loves";
+        String str = "Palestine hits Israel, Israel hits Palestine, Palestine destroyed", subStr = "hits";
         int count;
         count = spaceCounter(str);
         System.out.println(count);
@@ -12,6 +12,7 @@ public class Example_5_3 {
     public static int spaceCounter(String str){
         int count = 0;
          int index = str.indexOf(" ");
+        System.out.println("Place of spaces: ");
          while(index >= 0){
            count++;
            index = str.indexOf(' ', index + 1);
@@ -22,6 +23,7 @@ public class Example_5_3 {
     public static int substrCounter(String str, String subStr){
         int count = 0;
         int index = str.indexOf(subStr);
+        System.out.println("Places of " + subStr + ": ");
         while(index >= 0){
             count++;
             index = str.indexOf(subStr, index + 1);
