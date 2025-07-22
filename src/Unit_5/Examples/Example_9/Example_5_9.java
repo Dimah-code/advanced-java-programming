@@ -11,7 +11,7 @@ public class Example_5_9 {
         DateFormat formatter = DateFormat.getDateInstance();
         System.out.println("Default date: " + formatter.format(now));
 
-        formatter = DateFormat.getDateInstance(DateFormat.SHORT, Locale.);
+        formatter = DateFormat.getDateInstance(DateFormat.SHORT, Locale.US);
         System.out.println("Short (UK): " + formatter.format(now));
 
         formatter = DateFormat.getDateInstance(DateFormat.MEDIUM);
