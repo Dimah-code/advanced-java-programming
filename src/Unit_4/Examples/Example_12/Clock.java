@@ -1,7 +1,5 @@
 package Unit_4.Examples.Example_12;
 
-import com.sun.source.tree.UsesTree;
-
 public class Clock {
     private int hours, minutes, seconds;
 
