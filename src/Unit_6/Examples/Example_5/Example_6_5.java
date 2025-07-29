@@ -4,19 +4,19 @@ public class Example_6_5 {
     static Scanner in = new Scanner(System.in);
     public static void main(String[] args) {
         int[] grades = new int[4];
-        System.out.println("Imagine you have 4 student:");
+        System.out.println("Imagine you have 4 students:");
         for (int i = 0; i < grades.length; i++) {
-            System.out.println("Enter student " + (i + 1) + "th grade: ");
+            System.out.println("Enter student " + (i + 1) + " grade: ");
             grades[i] = in.nextInt();
         }
         System.out.println("Before sorting");
-        for (int i = 0; i < grades.length; i++) {
-            System.out.print(grades[i] + " , ");
+        for (int grade : grades) {
+            System.out.print(grade + " , ");
         }
         System.out.println();
         selectionSort(grades);
-        for (int i = 0; i < grades.length; i++) {
-            System.out.print(grades[i] + " , ");
+        for (int grade : grades) {
+            System.out.print(grade + " , ");
         }
     }
     private static void selectionSort(int[] arr){
