@@ -13,12 +13,12 @@ public class Example_6_9 {
             num = in.nextInt();
             myList.insertEnd(num);
         }
-        System.out.println("Before Sorting \n " + myList.toStr());
+        System.out.println("Before Sorting \n " + myList);
         myList.selectionSort();
-        System.out.println("After sorting \n " + myList.toStr());
-        int largestEl = myList.largestElement();
-        System.out.println("Largest number in array: " + largestEl);
+        System.out.println("After sorting \n " + myList);
+        int largestElement = myList.largestElement();
+        System.out.println("Largest number in array: " + largestElement);
         yourList.makeCopy(myList);
-        System.out.println("your list after copying mylist " + yourList.toStr() );
+        System.out.println("your list after copying mylist " + yourList);
     }
 }
