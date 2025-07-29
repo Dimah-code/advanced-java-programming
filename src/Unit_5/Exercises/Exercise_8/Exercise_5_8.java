@@ -6,29 +6,27 @@ import static java.lang.Character.*;
 public class Exercise_5_8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String text, result;
+        String inputString, convertedString;
 
         System.out.println("Enter a text with some uppercase: ");
-        text = scanner.nextLine();
+        inputString = scanner.nextLine();
 
-        result = lowerToUpper(text);
-        System.out.println(result);
+        convertedString = lowerToUpper(inputString);
+        System.out.printf("Uppercase all lowercase charachters: %s\n", convertedString);
+
         scanner.close();
     }
 
     public static String lowerToUpper(String text) {
-        char[] arr = text.toCharArray();
-        for (int i = 0; i < arr.length; i++) {
-            if(isLetter(arr[i])){
-                if(isLowerCase(arr[i])){
-                    arr[i] = toUpperCase(arr[i]);
+        char[] chars = text.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            if(isLetter(chars[i])){
+                if(isLowerCase(chars[i])){
+                    chars[i] = toUpperCase(chars[i]);
                 }
             }
         }
-        text = "";
-        for (int i = 0; i < arr.length; i++) {
-            text += arr[i];
-        }
-        return text;
+
+        return new String(chars);
     }
 }
