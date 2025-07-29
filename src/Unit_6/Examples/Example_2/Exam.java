@@ -17,8 +17,9 @@ public class Exam {
         if(scores.length > 0){
             System.out.println("************************");
             System.out.println("Students" + "\t" + "Scores");
-            for(int i = 0; i < scores.length; i++)
+            for(int i = 0; i < scores.length; i++){
                 System.out.println(i+1 + " : \t\t" + scores[i]);
+            }
             System.out.println("************************");
             System.out.println("Minimum score is: " + findMin());
             System.out.println("Maximum score is: " + findMax());
