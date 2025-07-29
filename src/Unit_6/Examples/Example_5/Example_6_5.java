@@ -20,7 +20,7 @@ public class Example_6_5 {
         }
     }
     private static void selectionSort(int[] arr){
-        int smallest, minIndex, temp, len = arr.length;
+        int smallest, temp, len = arr.length;
         for(int i = 1; i < len - 1; i++){
             smallest = i;
             for(int j = i + 1; j < len; j++){
