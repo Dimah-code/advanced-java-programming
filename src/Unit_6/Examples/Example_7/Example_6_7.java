@@ -3,21 +3,30 @@ import java.util.Scanner;
 
 public class Example_6_7 {
     public static void main(String[] args) {
-        int[] list = {12, 523, 2, 4 , 7, 3};
+        Scanner scanner = new Scanner(System.in);
+
         int number;
+        int[] list = new int[10];
+
+        for (int i = 0; i < list.length; i++) {
+            System.out.println("Enter number " + (i + 1) + ": ");
+            list[i] = scanner.nextInt();
+        }
+
         System.out.println("Enter a number to search in array: ");
-        Scanner in = new Scanner(System.in);
-        number = in.nextInt();
-        in.close();
+        number = scanner.nextInt();
+
         int found = seqSearch(list, number);
-        if(found != -1)
-            System.out.println("number found in " + found);
-        else
+        if(found != -1){
+            System.out.println("number found in " + found + " position.");
+        } else{
             System.out.println("number not found!");
+        }
     }
     private static int seqSearch(int[] list , int number){
         boolean found = false;
-        int loc = 0, foundIn;
+        int loc = 0;
+
         while(!found && loc < list.length)
                 if(list[loc] == number)
                     found = true;
