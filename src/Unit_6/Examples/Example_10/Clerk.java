@@ -1,24 +1,32 @@
 package Unit_6.Examples.Example_10;
+
 public class Clerk {
     private float hours;
     private float rate;
     private String name;
-    public void setHours(float h){
-        hours = h;
+
+    public void setHours(float hours) {
+        this.hours = hours;
     }
-    public void setRate(float r){
-        rate = r;
+
+    public void setRate(float rate) {
+        this.rate = rate;
     }
-    public float getHours(){
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public float getHours() {
         return hours;
     }
-    public float getRate(){
+
+    public float getRate() {
         return rate;
     }
-    public void setName(String s){
-        name = s;
-    }
-    public String getName(){
+
+
+    public String getName() {
         return name;
     }
 
