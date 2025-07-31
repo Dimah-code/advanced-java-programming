@@ -44,7 +44,7 @@ public class Exercise_6_3 {
         System.out.printf("Average: %6.2f\n", average);
 
         // Output
-        System.out.println("NO\tName\tID\t\tStatus");
+        System.out.println("Name\tID\t\tGrade\tStatus");
         for (int i = 0; i < number; i++) {
             double diff = grade[i] - average;
             String status;
@@ -58,7 +58,7 @@ public class Exercise_6_3 {
                 status = "Unsatisfactory";
             }
 
-            System.out.println((i + 1) + "\t" + name[i] + "\t" + ID[i] + "\t" + status);
+            System.out.println(name[i] + "\t" + ID[i] + "\t" + grade[i] + "\t" + status);
         }
 
         scanner.close();
