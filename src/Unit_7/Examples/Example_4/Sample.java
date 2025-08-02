@@ -17,7 +17,8 @@ public class Sample {
     public int getMyValue(){
         return myValue;
     }
-    public String toStr(){
+    @Override
+    public String toString(){
         return (myValue+ ", "+ sum + ", " +count);
     }
 }
