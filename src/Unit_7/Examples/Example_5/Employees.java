@@ -1,19 +1,19 @@
 package Unit_7.Examples.Example_5;
 
 public class Employees {
-    protected long employeeNumber;
-    protected long employeeSalary;
-    protected void setEmployeeNumber(long number){
-        employeeNumber = number;
+    protected long ID;
+    protected long salary;
+    protected void setID(long ID){
+        this.ID = ID;
     }
-    public void setEmployeeSalary(long salary){
-        employeeSalary = salary;
+    public void setSalary(long salary){
+        this.salary = salary;
     }
-    public long getEmployeeNumber(){
-        return employeeNumber;
+    public long getID(){
+        return ID;
     }
-    public long getEmployeeSalary(){
-        return employeeSalary;
+    public long getSalary(){
+        return salary;
     }
 
 }
