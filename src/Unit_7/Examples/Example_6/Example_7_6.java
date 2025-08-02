@@ -6,10 +6,11 @@ public class Example_7_6 {
     private static Student[] dayStudents;
     private static NightStudent[] nightStudents;
     static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         askNumberOfStudents();
-        while(true){
-            switch (menu()){
+        while (true) {
+            switch (menu()) {
                 case 1 -> enterDataDs();
                 case 2 -> showDataDs();
                 case 3 -> enterDataNs();
@@ -19,39 +20,45 @@ public class Example_7_6 {
             }
         }
     }
-    public static void askNumberOfStudents(){
+
+    public static void askNumberOfStudents() {
         System.out.println("How many daily students? ");
         dayStudents = new Student[sc.nextInt()];
         System.out.println("How many night students? ");
         nightStudents = new NightStudent[sc.nextInt()];
     }
-    public static void enterDataDs(){
-        for(int i = 0; i < dayStudents.length; i++){
+
+    public static void enterDataDs() {
+        for (int i = 0; i < dayStudents.length; i++) {
             dayStudents[i] = new Student();
             dayStudents[i].getInfo();
         }
     }
-    public static void enterDataNs(){
-        for(int i = 0; i < nightStudents.length; i++){
+
+    public static void enterDataNs() {
+        for (int i = 0; i < nightStudents.length; i++) {
             nightStudents[i] = new NightStudent();
             nightStudents[i].getInfo();
         }
     }
-    public static void showDataDs(){
+
+    public static void showDataDs() {
         dayStudents[0].showTitle();
-        for(Student ds : dayStudents){
+        for (Student ds : dayStudents) {
             ds.showInfo();
         }
         System.out.println("\n------------------------------------");
     }
-    public static void showDataNs(){
+
+    public static void showDataNs() {
         nightStudents[0].showTitle();
-        for (NightStudent ns : nightStudents ){
+        for (NightStudent ns : nightStudents) {
             ns.showInfo();
         }
         System.out.println("\n------------------------------------");
     }
-    public static int menu(){
+
+    public static int menu() {
         System.out.println("1. Enter daily students data.");
         System.out.println("2. Report daily students data.");
         System.out.println("3. Enter night students data.");

@@ -7,7 +7,8 @@ public class Student {
     protected String name;
     protected long studentId;
     protected float grade;
-    public void getInfo(){
+
+    public void getInfo() {
         System.out.println("Enter Student's Name: ");
         name = sc.nextLine();
         System.out.println("Enter Student's ID: ");
@@ -16,12 +17,14 @@ public class Student {
         grade = sc.nextFloat();
         sc.nextLine();
     }
-    public void showInfo(){
+
+    public void showInfo() {
         System.out.print(studentId + "\t\t");
         System.out.print(name.trim() + "\t\t");
         System.out.print(grade + "\n");
     }
-    public void showTitle(){
+
+    public void showTitle() {
         System.out.println("\nID\t\tName\t\tGrade");
     }
 }
