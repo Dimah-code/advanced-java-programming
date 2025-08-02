@@ -3,25 +3,30 @@ package Unit_7.Exercises.Exercise_3;
 public class TextBook extends Book {
     // fields
     protected String author;
+
     // constructors
-    public TextBook(){
+    public TextBook() {
         super();
         setInfo("No Author");
     }
-    public TextBook(String title, int pages, String author){
+
+    public TextBook(String title, int pages, String author) {
         super.setInfo(title, pages);
         setInfo(author);
     }
+
     // modifiers
-    public void setInfo(String author){
+    public void setInfo(String author) {
         this.author = author;
     }
+
     // accessors
-    public String getAuthor(){
+    public String getAuthor() {
         return author;
     }
+
     // Output
-    public String toString(){
-        return String.format(super.toString() + "Author: %s" , author);
+    public String toString() {
+        return String.format(super.toString() + "Author: %s", author);
     }
 }
