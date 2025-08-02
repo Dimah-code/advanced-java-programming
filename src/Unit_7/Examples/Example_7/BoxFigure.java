@@ -37,9 +37,9 @@ public class BoxFigure extends RectangleFigure {
     }
     public String toString(){
         return ("Length = " + getLength() +
-                "Width = " + getWidth() +
-                "Height = " + height +
-                "Surface area = " + area() +
-                "Volume = " + volume());
+                " Width = " + getWidth() +
+                " Height = " + height +
+                " Surface area = " + area() +
+                " Volume = " + volume());
     }
 }
