@@ -6,7 +6,7 @@ public class Example_7_7 {
         RectangleFigure rectangle, shapeRef;
         BoxFigure box;
         rectangle = new RectangleFigure(8, 5);
-        box = new BoxFigure(10, 7 ,3);
+        box = new BoxFigure(10, 7, 3);
         shapeRef = rectangle;
         System.out.println("Line 10: Rectangle: \n" + shapeRef + "\n");
         shapeRef = box;

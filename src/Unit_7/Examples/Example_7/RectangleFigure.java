@@ -2,38 +2,46 @@ package Unit_7.Examples.Example_7;
 
 public class RectangleFigure {
     private double length, width;
-    public RectangleFigure(){
+
+    public RectangleFigure() {
         length = 0;
         width = 0;
     }
-    public RectangleFigure(double length, double width){
+
+    public RectangleFigure(double length, double width) {
         setDimension(length, width);
     }
-    public void setDimension(double length, double width){
-        if(length >= 0){
+
+    public void setDimension(double length, double width) {
+        if (length >= 0) {
             this.length = length;
-        }else{
+        } else {
             this.length = 0;
         }
-        if(width >= 0){
+        if (width >= 0) {
             this.width = width;
-        }else{
+        } else {
             this.width = 0;
         }
     }
-    public double getLength(){
+
+    public double getLength() {
         return length;
     }
-    public double getWidth(){
+
+    public double getWidth() {
         return width;
     }
-    public double area(){
+
+    public double area() {
         return (length * width);
     }
-    public double perimeter(){
+
+    public double perimeter() {
         return 2 * (length + width);
     }
-    public String toString(){
+
+    public String toString() {
         return ("Length = " + length +
                 " Width = " + width +
                 " Area = " + area() +
