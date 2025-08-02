@@ -1,32 +1,40 @@
 package Unit_7.Examples.Example_1;
+
 public class Box extends Rectangle {
     private double height;
-    public Box(){
+
+    public Box() {
         super();
         height = 0;
     }
-    public Box(double l, double w , double h){
+
+    public Box(double l, double w, double h) {
         super(l, w);
         height = h;
     }
-    public void setDimension(double l ,double w, double h){
-        super.setDeimension(l ,w);
-        if(h >= 0){
+
+    public void setDimension(double l, double w, double h) {
+        super.setDeimension(l, w);
+        if (h >= 0) {
             height = h;
-        }else{
+        } else {
             height = 0;
         }
     }
-    public double getHeight(){
+
+    public double getHeight() {
         return height;
     }
-    public double area(){
+
+    public double area() {
         return 2 * (getLength() * getHeight() + getLength() * getWidth() + getWidth() * getHeight());
     }
-    public double volume(){
+
+    public double volume() {
         return super.area() * getHeight();
     }
-    public String toStr(){
+
+    public String toStr() {
         return (super.toStr() + "; Height = " + height);
     }
 }
