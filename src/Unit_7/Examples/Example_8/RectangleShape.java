@@ -35,8 +35,8 @@ public class RectangleShape {
     }
     public String toString(){
         return ("Length: " + length
-        + "Width: " + width
-        + "Area: " + area()
-        + "Perimeter: " + perimeter());
+        + " Width: " + width
+        + " Area: " + area()
+        + " Perimeter: " + perimeter());
     }
 }

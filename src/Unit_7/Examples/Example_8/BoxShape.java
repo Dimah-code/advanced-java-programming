@@ -33,9 +33,9 @@ public class BoxShape extends RectangleShape{
     }
     public String toString(){
         return ("Length: " + length
-        + "Width: " + width
-        + "Height: " + height
-        + "Surface area: " + area()
-        + "Volume: " + volume());
+        + " Width: " + width
+        + " Height: " + height
+        + " Surface area: " + area()
+        + " Volume: " + volume());
     }
 }
