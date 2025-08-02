@@ -24,6 +24,10 @@ A complete collection of code examples and exercises from the Persian book **"St
 Unit 1: Basics of Java Programming Language
 Unit 2: Program structure in Java and input - output
 Unit 3: Control Structures 
+Unit 4: Introduction to Classes
+Unit 5: Introducing Some Useful Classes
+Unit 6: Arrays and Their Applications
+Unit 7: Inheritance and Polymorphism
 ```
 
 ## 🧩 How to Run
