@@ -13,7 +13,8 @@ public class Person {
         this.firstName = first;
         this.lastName = last;
     }
-    public String toStr(){
+    @Override
+    public String toString(){
         return (firstName + " " + lastName);
     }
 }

@@ -16,7 +16,8 @@ public class PartTimeEmployee extends Person {
     public int calculate(){
         return (hours * rate);
     }
-    public String toStr(){
-        return (super.toStr() + "\t\t" + calculate());
+    @Override
+    public String toString(){
+        return (super.toString() + "\t\t" + calculate());
     }
 }
