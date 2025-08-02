@@ -6,8 +6,6 @@ public class Example_7_5 {
         employee.setID(228398);
         employee.setSalary(12000000);
         employee.setRegion(2);
-        System.out.println("ID: " + employee.getID() +
-                " Salary: " + employee.getSalary() +
-                " Region: " + employee.getRegion());
+        System.out.println("ID: " + employee.getID() + " Salary: " + employee.getSalary() + " Region: " + employee.getRegion());
     }
 }
