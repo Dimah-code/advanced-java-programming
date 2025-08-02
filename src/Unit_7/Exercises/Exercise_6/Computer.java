@@ -1,6 +1,24 @@
 package Unit_7.Exercises.Exercise_6;
 
 public class Computer {
-    private String cpuType;
-    private int i;
+    private String processorType;
+    private double speed; // in GHz or any unit
+
+    public Computer(String processorType, double speed) {
+        this.processorType = processorType;
+        this.speed = speed;
+    }
+
+    public String getProcessorType() {
+        return processorType;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public String toString() {
+        return "Computer{processorType='" + processorType + "', speed=" + speed + "}";
+    }
 }
