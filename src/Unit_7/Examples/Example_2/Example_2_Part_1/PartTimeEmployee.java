@@ -22,6 +22,6 @@ public class PartTimeEmployee extends Person {
 
     @Override
     public String toString() {
-        return (super.toString() + "\t\t" + calculate());
+        return (super.toString() + " " + calculate());
     }
 }
