@@ -1,4 +1,5 @@
 package Unit_7.Examples.Example_4;
+
 public class Example_7_4 {
     public static void main(String[] args) {
         Sample sample1 = new Sample(5);
