@@ -1,31 +1,39 @@
 package Unit_7.Examples.Example_10;
 
-public class Rect extends GeometricShape {
+public class Rectangle extends GeometricShape {
     protected double length, width;
-    public Rect(){
+
+    public Rectangle() {
         this(0, 0);
     }
-    public Rect(double length, double width){
+
+    public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
     }
-    public void setLength(double length){
+
+    public void setLength(double length) {
         this.length = length;
     }
-    public void setWidth(double width){
+
+    public void setWidth(double width) {
         this.width = width;
     }
-    public double getLength(){
+
+    public double getLength() {
         return length;
     }
-    public double getWidth(){
+
+    public double getWidth() {
         return width;
     }
-    public void calculate(){
+
+    public void calculate() {
         area = length * width;
         perimeter = 2 * (length + width);
     }
-    public String toString(){
+
+    public String toString() {
         return String.format("Rectangle:\nLength = %6.2f  Width = %6.2f\n", length, width);
     }
 }
