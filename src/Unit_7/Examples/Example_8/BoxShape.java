@@ -1,41 +1,48 @@
 package Unit_7.Examples.Example_8;
 
-public class BoxShape extends RectangleShape{
+public class BoxShape extends RectangleShape {
     protected double height;
-    public BoxShape(){
+
+    public BoxShape() {
         super();
         height = 0;
     }
-    public BoxShape(double length, double width, double height){
+
+    public BoxShape(double length, double width, double height) {
         super(length, width);
-        if(height >= 0){
+        if (height >= 0) {
             this.height = height;
-        }else{
+        } else {
             this.height = 0;
         }
     }
-    public double getHeight(){
+
+    public double getHeight() {
         return height;
     }
-    public void setDimension(double length, double width, double height){
+
+    public void setDimension(double length, double width, double height) {
         super.setDiemnsion(length, width);
-        if(height >= 0){
+        if (height >= 0) {
             this.height = height;
-        }else{
+        } else {
             this.height = 0;
         }
     }
-    public double area(){
+
+    public double area() {
         return 2 * (length * width + length * height + width * height);
     }
-    public double volume(){
+
+    public double volume() {
         return (length * width * height);
     }
-    public String toString(){
+
+    public String toString() {
         return ("Length: " + length
-        + " Width: " + width
-        + " Height: " + height
-        + " Surface area: " + area()
-        + " Volume: " + volume());
+                + " Width: " + width
+                + " Height: " + height
+                + " Surface area: " + area()
+                + " Volume: " + volume());
     }
 }
