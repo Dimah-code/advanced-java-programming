@@ -14,7 +14,7 @@ A complete collection of code examples and exercises from the Persian book **"St
 * **Title**: Step-by-Step Java Programming (آموزش گام به گام برنامه‌نویسی به زبان جاوا)  
 * **Author**: Dr. Einollah Jafarnejad Qomi (دکتر عین الله جعفرنژاد قمی)  
 * **Publisher**: Olom Rayaneh (علوم رایانه)  
-* **Edition**: 2nd (approx. 600 pages, 2022/2023) :contentReference[oaicite:1]{index=1}  
+* **Edition**: 2nd (approx. 600 pages, 2022/2023)
 * **Scope**: Covers Java’second essentials progressively—from basic data types and control structures to classes, methods, recursion, and file I/O—designed with practical Eclipse-based examples.
 
 ---
